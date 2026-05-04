@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prevención de Drogas - Proyecto Educativo</title>
+<style>
+body {font-family: Arial, sans-serif; margin:0; background:#0f172a; color:#e2e8f0;}
+header {background:#020617; padding:20px; text-align:center;}
+nav {background:#1e293b; padding:10px; text-align:center;}
+nav a {color:#38bdf8; margin:10px; text-decoration:none;}
+section {padding:20px;}
+h2 {color:#38bdf8;}
+.card {background:#1e293b; padding:15px; margin:10px 0; border-radius:10px;}
+footer {background:#020617; text-align:center; padding:10px;}
+textarea, input {width:100%; padding:10px; margin:5px 0;}
+button {padding:10px; background:#38bdf8; border:none; cursor:pointer;}
+</style>
+</head>
+<body><header>
+<h1>Prevención del Consumo de Drogas</h1>
+<p>Proyecto educativo avanzado sobre farmacología, efectos y prevención</p>
+</header><nav>
+<a href="#definicion">Definición</a>
+<a href="#tipos">Tipos</a>
+<a href="#efectos">Efectos</a>
+<a href="#prevencion">Prevención</a>
+<a href="#ia">Asistente IA</a>
+</nav><section id="definicion">
+<h2>¿Qué son las drogas?</h2>
+<div class="card">
+<p>Las drogas son sustancias químicas que al introducirse en el organismo modifican el funcionamiento del sistema nervioso central. Estas alteraciones pueden afectar la percepción, el estado de ánimo, la conciencia y el comportamiento.</p>
+<p>Desde un enfoque técnico, las drogas interactúan con receptores neuronales como dopamina, serotonina y GABA, alterando la neurotransmisión.</p>
+</div>
+</section><section id="tipos">
+<h2>Clasificación de las drogas</h2>
+<div class="card">
+<ul>
+<li><b>Depresoras:</b> Alcohol, benzodiacepinas (disminuyen actividad cerebral)</li>
+<li><b>Estimulantes:</b> Cocaína, anfetaminas (incrementan actividad neuronal)</li>
+<li><b>Alucinógenas:</b> LSD, psilocibina (alteran percepción)</li>
+<li><b>Opioides:</b> Heroína, morfina (actúan sobre receptores opioides)</li>
+</ul>
+</div>
+</section><section id="efectos">
+<h2>Efectos fisiológicos y psicológicos</h2>
+<div class="card">
+<p><b>Corto plazo:</b> Euforia, ansiedad, taquicardia, alteración cognitiva.</p>
+<p><b>Largo plazo:</b> Daño cerebral, dependencia, alteraciones psiquiátricas, fallo orgánico.</p>
+<p><b>Impacto neurológico:</b> Cambios en la plasticidad sináptica y liberación de dopamina.</p>
+</div>
+</section><section id="prevencion">
+<h2>Estrategias de prevención</h2>
+<div class="card">
+<ul>
+<li>Educación basada en evidencia científica</li>
+<li>Desarrollo de habilidades socioemocionales</li>
+<li>Ambientes familiares saludables</li>
+<li>Políticas públicas y regulación</li>
+</ul>
+</div>
+</section><section id="ia">
+<h2>Asistente IA (Simulación)</h2>
+<div class="card">
+<p>Haz una pregunta sobre drogas:</p>
+<input type="text" id="pregunta" placeholder="Ejemplo: ¿Qué hace la cocaína en el cerebro?">
+<button onclick="responder()">Preguntar</button>
+<p id="respuesta"></p>
+</div>
+</section><footer>
+<p>Proyecto escolar - Educación preventiva</p>
+</footer><script>
+function responder() {
+let pregunta = document.getElementById("pregunta").value.toLowerCase();
+let respuesta = "";
+
+if (pregunta.includes("cocaína")) {
+respuesta = "La cocaína bloquea la recaptación de dopamina, generando acumulación en la sinapsis y causando euforia intensa.";
+}
+else if (pregunta.includes("alcohol")) {
+respuesta = "El alcohol es un depresor del sistema nervioso central que potencia el GABA e inhibe el glutamato.";
+}
+else if (pregunta.includes("adicción")) {
+respuesta = "La adicción es un trastorno cerebral crónico caracterizado por la búsqueda compulsiva de sustancias.";
+}
+else {
+respuesta = "Pregunta no reconocida. Intenta usar términos como alcohol, cocaína o adicción.";
+}
+
+document.getElementById("respuesta").innerText = respuesta;
+}
+</script></body>
+</html>
